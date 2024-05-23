@@ -1,13 +1,13 @@
 const express =require("express");
-const app =express();
-app.get("/",(req,res)=>{
-	res.send("helllo welcome to out home page")
+const app =express()
 
-})
+const router =require("./router/auth-router")
 
-app.get("/registeration", (req,res)=>{
-	res.send(" you are on registeration page");
-})
+app.use("/api/auth",router );
+ 
+ 
+
+ 
 
 const PORT=8080;
 app.listen(PORT, ()=>{
