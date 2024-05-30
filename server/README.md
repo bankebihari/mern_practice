@@ -15,3 +15,10 @@ git push -u origin main
 git remote add origin https://github.com/bankebihari/mern_practice.git
 git branch -M main
 git push -u origin main
+ 
+ **_______ resetration _____**
+ this us learning fro the technikal thapa youtube channel where u can learn all this technology
+
+ Auther-Banke Bihari
+ yt-despodevil
+ 

@@ -1,7 +1,7 @@
 //controller aare typically used to process incoming request
 //interact with models and send the response data
 
-
+const User= require("../controllers/auth-controller"); 
 const home= (req,res)=>{
 	try {
 		res
@@ -18,15 +18,21 @@ const home= (req,res)=>{
 //registration
 //**___------- */
 
-const register=(req,res)=>{
+const register= async(req,res)=>{
 	try {
+		//console.log(req.body);
+		const{username,email,phone, password}=req.body;
+		const userExist= User.findOne({email:email});
+		if(userExist){
+			return res.status(400).json({msg:"email alredy exist"});
+	} 
+		await User.create({username,email,phone, password});
 		res
-		.send("welcome to register page")
-		.status(200);
+		   .send("welcome to register page")
+		   .status(200).json({data});
 	} catch (error) {
-		 res
-		    .status(400)
-			.send({msg:"page not found"})
+
+		 res.status(500).json("internal server error")
 	}
 }
 
