@@ -1,0 +1,8 @@
+.env
+node_modules
+package.json
+
+# step required for setup server 
+1. npm i 
+2. install all required package
+3. 
