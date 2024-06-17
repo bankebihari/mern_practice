@@ -1,9 +1,9 @@
 *.env
-*.node_modules
-*package.json
-*node_modules
+# Ignore node_modules directory
+node_modules/
 
-# step required for setup server 
-1. npm i 
-2. install all required package
-npm install
+# Ignore environment variable files
+.env
+
+# Ignore package-lock.json file
+package-lock.json
