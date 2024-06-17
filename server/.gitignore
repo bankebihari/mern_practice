@@ -1,7 +1,7 @@
-**/.env
-**.node_modules
-**/package.json
-**/node_modules
+*.env
+*.node_modules
+*package.json
+*node_modules
 
 # step required for setup server 
 1. npm i 
