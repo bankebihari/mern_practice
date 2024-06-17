@@ -1,8 +1,8 @@
-.env
-node_modules
-package.json
+**/.env
+**.node_modules
+**/package.json
+**/node_modules
 
 # step required for setup server 
 1. npm i 
 2. install all required package
-3. 

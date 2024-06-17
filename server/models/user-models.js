@@ -66,3 +66,5 @@ userSchema.methods.generateToken = async function (){
 // define the model or the collection name 
 const User = mongoose.model("User",userSchema);
 module.exports= User;
+
+
